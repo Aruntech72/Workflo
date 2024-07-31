@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: sans-serif;
+}
+.container {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.buttons {
+  display: flex;
+}
+.button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.property {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.icon {
+  margin-right: 10px;
+}
+.label {
+  font-weight: bold;
+}
+.value {
+  margin-left: auto;
+}
+.textarea {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  resize: vertical;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="title">Title</div>
+    <div class="buttons">
+      <button class="button">Share</button>
+      <button class="button">Favorite</button>
+    </div>
+  </div>
+  <div class="property">
+    <div class="icon">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.07 12.5 13.07s-.92-.45-.92-1c0-.55.45-.93 1-.93s1 .4 1 1c0 .55-.45.93-1 .93zm-1.07 3.75l-.9-.92C10.55 17.1 10 17.07 9.5 17.07s-.92.45-.92 1c0 .55.45.93 1 .93s1-.4 1-1c0-.55-.45-.93-1-.93z" fill="currentColor" fill-opacity="1" stroke="none" stroke-width="0" />
+      </svg>
+    </div>
+    <div class="label">Status</div>
+    <div class="value">Not selected</div>
+  </div>
+  <div class="property">
+    <div class="icon">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2z" fill="currentColor" fill-opacity="1" stroke="none" stroke-width="0" />
+      </svg>
+    </div>
+    <div class="label">Priority</div>
+    <div class="value">Not selected</div>
+  </div>
+  <div class="property">
+    <div class="icon">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M17 12h-5v5h5v-5zm-7-6h-2v14h2v-14zm11 5h-2v2h2v-2z" fill="currentColor" fill-opacity="1" stroke="none" stroke-width="0" />
+      </svg>
+    </div>
+    <div class="label">Deadline</div>
+    <div class="value">Not selected</div>
+  </div>
+  <div class="property">
+    <div class="icon">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M14.06 9.02l.92.92c.5.5.5 1.28 0 1.78-.5.5-1.28.5-1.78 0l-.92-.92c-.5-.5-.5-1.28 0-1.78.5-.5 1.28-.5 1.78 0zm-10.06 3.75l.92.92c.5.5.5 1.28 0 1.78-.5.5-1.28.5-1.78 0l-.92-.92c-.5-.5-.5-1.28 0-1.78.5-.5 1.28-.5 1.78 0zm-1.81 5.25l.92.92c.5.5.5 1.28 0 1.78-.5.5-1.28.5-1.78 0l-.92-.92c-.5-.5-.5-1.28 0-1.78.5-.5 1.28-.5 1.78 0z" fill="currentColor" fill-opacity="1" stroke="none" stroke-width="0" />
+      </svg>
+    </div>
+    <div class="label">Description</div>
+    <div class="value">Not selected</div>
+  </div>
+  <div class="property">
+    <div class="icon">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm0-4h-2v-2h2v2z" fill="currentColor" fill-opacity="1" stroke="none" stroke-width="0" />
+      </svg>
+    </div>
+    <div class="label">Add custom property</div>
+  </div>
+  <textarea class="textarea"></textarea>
+</div>
+</body>
+</html>

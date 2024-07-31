@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title>Assignment - Full Stack Developer</title>
+    
+   <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            float: left;
+            margin-right: 20px;
+            
+        }
+        .main-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            float: left;
+            width: 800px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .sidebar h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #5bb4f0;
+        }
+        .main-content h2 {
+            margin-top: 0;
+        }
+        .main-content .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .main-content .card h3 {
+            margin-top: 0;
+        }
+        .main-content .card .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .main-content .card .actions button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .main-content .card .actions button:hover {
+            background-color: #45a049;
+        }
+        .main-content .card .description {
+            margin-top: 10px;
+        }
+        .main-content .card .description ul {
+            list-style: none;
+            padding: 0;
+        }
+        .main-content .card .description li {
+            margin-bottom: 5px;
+        }
+        .main-content .card .description li span {
+            font-weight: bold;
+        }
+        .main-content .card .status {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .main-content .card .status span {
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .main-content .card .status .in-progress {
+            background-color: #FFC107;
+            color: white;
+        }
+        .main-content .card .status .under-review {
+            background-color: #FF5733;
+            color: white;
+        }
+        .main-content .card .status .finished {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .main-content .card .status .to-do {
+            background-color: #9E9E9E;
+            color: white;
+        }
+        .main-content .card .status .date {
+            font-size: 0.8em;
+            color: #777;
+        }
+        .fa-people-arrows{
+            font-size: 70px;
+            color: cyan;
+        }
+        .fa-share-nodes{
+            font-size: 77px;
+            color: purple;
+        }
+        .fa-book{
+            font-size: 77px;
+            color: purple;
+        }
+        .fa-square-check{
+            font-size: 80px;
+            color: purple;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            &nbsp;&nbsp;<h2>Profile</h2>
+            <br>
+            <ul>
+                &nbsp;&nbsp; &nbsp;&nbsp;<i class="fa-solid fa-house"></i> <br><t1><a href="#">Home</a></t1> <br>
+                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-chess-board"></i><t2><a href="#">Boards</a></t2> <br>
+                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-gear"></i><t3><a href="#">Settings</a></t3> <br>
+                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-people-group"></i><t4><a href="#">Teams</a></t4> <br>
+                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-chart-simple"></i><i class="fa-thin fa-chart-mixed"></i><t5><a href="#">Analytics</a></t5> <br>
+            </ul>
+            <i class="fa-solid fa-list-check"></i> &nbsp;&nbsp;<button> <a href="file.html">Create new task</a></button>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h1>Good morning, Arun!</h1>
+                <div>
+                    <button>Help & feedback</button>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-people-arrows"></i>  &nbsp;&nbsp; <h3>Introducing tags</h3>
+                <div class="description">
+                    <p>Easily categorize and find your notes by adding tags. Keep your workspace clutter-free and efficient.</p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-sharp-duotone fa-solid fa-share-nodes"></i> &nbsp;&nbsp; <br><h3>Share Notes Instantly</h3>
+                <div class="description">
+                    <p>Effortlessly share your notes with others via email or link. Enhance collaboration with quick sharing options.</p>
+                </div>
+                <div class="actions">
+                    <div>
+                        <button> Button <a href="file.html"></a> </button>
+                        <button>Automation</button>
+                        <button>Filter</button>
+                    </div>
+                    <div>
+                        <button>Share</button>
+                        <button>Create new</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-book"></i>  &nbsp;&nbsp; <br> <h3>Access Anywhere</h3>
+                <div class="description">
+                    <p>Sync your notes across all devices. Stay productive whether you're on your phone, tablet, or computer.</p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-square-check"></i> <h3>To do</h3>
+                <div class="description">
+                    <ul>
+                        <li><span>Implement User Authentication</span> - Develop and integrate user authentication using email and password.</li>
+                    </ul>
+                </div>
+                <div class="status">
+                    <span class="to-do">To do</span>
+                    <span class="date">2024-08-15<br>1 hr ago</span>
+                </div>
+                <div class="actions">
+                    <button>Add new</button>
+                </div>
+            </div>
+            <div class="card">
+                <h3>In progress</h3>
+                <div class="description">
+                    <ul>
+                        <li><span>Design Home Page UI</span> - Develop and integrate user authentication using email and password.</li>
+                    </ul>
+                </div>
+                <div class="status">
+                    <span class="in-progress">In progress</span>
+                    <span class="date">2024-08-15<br>1 hr ago</span>
+                </div>
+                <div class="actions">
+                    <button>Add new</button>
+                </div>
+            </div>
+            <div class="card">
+                <h3>In progress</h3>
+                <div class="description">
+                    <ul>
+                        <li><span>Conduct User Feedback Survey</span> - Collect and analyze user feedback to improve app features.</li>
+                    </ul>
+                </div>
+                <div class="status">
+                    <span class="in-progress">In progress</span>
+                    <span class="date">2024-08-05<br>3 hr ago</span>
+                </div>
+                <div class="actions">
+                    <button>Add new</button>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Under review</h3>
+                <div class="description">
+                    <ul>
+                        <li><span>Integrate Cloud Storage</span> - Enable cloud storage for note backup and synchronization.</li>
+                    </ul>
+                </div>
+                <div class="status">
+                    <span class="under-review">Under review</span>
+                    <span class="date">2024-08-20<br>2 days ago</span>
+                </div>
+                <div class="actions">
+                    <button>Add new</button>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Finished</h3>
+                <div class="description">
+                    <ul>
+                        <li><span>Test Cross-browser Compatibility</span> - Ensure the app works seamlessly across different web browsers.</li>
+                    </ul>
+                </div>
+                <div class="status">
+                    <span class="finished">Finished</span>
+                    <span class="date">2024-07-30<br>4 days ago</span>
+                </div>
+                <div class="actions">
+                    <button>Add new</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
